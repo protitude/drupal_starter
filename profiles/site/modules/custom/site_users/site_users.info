@@ -1,0 +1,5 @@
+name = thissite Permissions Data
+description = Role and permission settings for the site.
+core = 7.x
+dependencies[] = secure_permissions
+files[] = thissite_users.module

@@ -1,0 +1,44 @@
+# Ignore configuration files that may contain sensitive information.
+//sites/*/settings.local.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore Drupal files that are in the make file.
+/.htaccess
+/favicon.gif
+/favicon.ico
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/INSTALL.mysql.txt
+/INSTALL.pgsql.txt
+/INSTALL.sqlite.txt
+/INSTALL.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/README.txt
+/robots.txt
+/UPGRADE.txt
+/authorize.php
+/cron.php
+/index.php
+/install.php
+/update.php
+/xmlrpc.php
+/web.config
+/includes
+/misc
+/modules
+/scripts
+/themes
+/profiles/minimal
+/profiles/standard
+/profiles/testing
+/sites/README.txt
+/sites/example.sites.php
+/sites/default/default.settings.php
+/sites/all/libraries
+/sites/all/themes
+/sites/all/modules/contrib
+/sites/all/modules/README.txt
