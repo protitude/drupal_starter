@@ -40,6 +40,6 @@ cat sites/default/sed > sites/default/settings.local.php
 rm sites/default/sed
 
 
-drush make drupal.make
+drush make -y drupal.make
 drush si -y $1
 drush uli admin
