@@ -1,6 +1,6 @@
 #! /bin/bash
 
-if [ -d cd profiles/site ]; then
+if [ -d 'profiles/site' ]; then
 mv profiles/site profiles/$1
 mv profiles/$1/site.info profiles/$1/$1.info
 mv profiles/$1/site.profile profiles/$1/$1.profile
@@ -46,7 +46,7 @@ drush si -y $1
 drush uli admin
 exit
 fi
-if [ -d cd profiles/$1 ]; then
+if [ ! -d 'profiles/site' ]; then
 echo already exists
 exit
 fi
