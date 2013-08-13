@@ -1,5 +1,7 @@
 #! /bin/bash
 
+If [ cd profiles/site ]
+then
 mv profiles/site profiles/$1
 mv profiles/$1/site.info profiles/$1/$1.info
 mv profiles/$1/site.profile profiles/$1/$1.profile
@@ -43,3 +45,8 @@ rm sites/default/sed
 drush make -y drupal.make
 drush si -y $1
 drush uli admin
+exit
+else
+echo already exists
+exit
+fi
